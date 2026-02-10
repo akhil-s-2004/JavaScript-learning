@@ -55,3 +55,30 @@ const myFunc = function(){
     console.log("Heloo world");
     
 }// function
+
+// Primitive datatypes store data by value, but non primitive ones store data by reference
+
+// __________________________________STACK and HEAP Memory___________________________________________
+// Stack(primitive) heap(non primitive)
+
+let userOne = "akhil";
+let userTwo = userOne; // only the copy of userone is added to usertwo
+console.log(userTwo);
+userTwo = "Sreelakshmi"
+console.log(userOne);
+console.log(userTwo); // only the value of usertwo changes not for userone
+
+
+let uOne = {
+    name : "akhil",
+    email : "akhil@gmail.com"
+}
+
+let uTwo = uOne;
+uTwo.email = "ak@gmail.com" // now emails of both uOne and uTwo changes as both are referring to the same memory(heap)
+
+console.log(uOne.email);
+console.log(uTwo.email);
+
+
+
