@@ -24,7 +24,24 @@ let isTrue1 = Boolean(isTrue)
 console.log(isTrue1);
 
 
-//{String Number Boolean} for conversionss
+//{String, Number, Boolean} for conversionss
 
+/* ___________________________Operations____________________________ */
 
+console.log(2+2);
+console.log(2-2);
+console.log(2/2);
+console.log(2*2);
 
+console.log(9%2);
+
+console.log( 2 ** 3);
+
+console.log(2 + 2 + "1"); // gives 41  first operand and operator gets the higher precedence
+console.log("1" + 2 + 2); // gives 122
+console.log(8+""); // default of "" is 0
+ 
+let counter = 0
+console.log(++counter );
+counter ++ // first maintains the value before operation
+console.log(++counter); // first adds the values
