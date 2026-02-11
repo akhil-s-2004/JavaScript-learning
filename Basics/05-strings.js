@@ -25,6 +25,26 @@ console.log(email.indexOf("l")); // returns 4
 
 
 //substring and slicing
+//substring does not support negative indexing and when start and end are interchanged(if by mistake) it is swapped
+//slicing is exact opposite, slice is more preferred
 console.log(email.substring(2,6)); //cannot use negative value as start value
+newString = email.slice(-7,-3);
+console.log(`Sliced string is ${newString}`);
+
+//trim : trims blank space
+const word = "   Akku  "
+console.log(word.trim());
+console.log(word.trimStart());
+console.log(word.trimEnd());
+
+//replace and includes
+const url = "www.tarento.com"
+console.log(url.replace('.','@'));
+console.log(url.replaceAll('.','@'));
+
+console.log(url.includes('www@'));
+
+
+
 
 
